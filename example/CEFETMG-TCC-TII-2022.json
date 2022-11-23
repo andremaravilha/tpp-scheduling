@@ -1,0 +1,319 @@
+{
+    "datetimes": [
+
+        { "id":  0, "date": "2022-11-23", "start": "13:50", "end": "14:40" },
+        { "id":  1, "date": "2022-11-23", "start": "14:40", "end": "15:30" },
+        { "id":  2, "date": "2022-11-23", "start": "15:50", "end": "16:40" },
+        { "id":  3, "date": "2022-11-23", "start": "16:40", "end": "17:30" },
+        
+        { "id":  4, "date": "2022-11-24", "start": "10:50", "end": "11:40" },
+        { "id":  5, "date": "2022-11-24", "start": "11:40", "end": "12:30" },
+        
+        { "id":  6, "date": "2022-11-25", "start": "13:50", "end": "14:40" },
+        { "id":  7, "date": "2022-11-25", "start": "14:40", "end": "15:30" },
+        { "id":  8, "date": "2022-11-25", "start": "15:50", "end": "16:40" },
+        { "id":  9, "date": "2022-11-25", "start": "16:40", "end": "17:30" },
+        
+        { "id": 10, "date": "2022-11-29", "start": "13:50", "end": "14:40" },
+        { "id": 11, "date": "2022-11-29", "start": "14:40", "end": "15:30" },
+        { "id": 12, "date": "2022-11-29", "start": "15:50", "end": "16:40" },
+        { "id": 13, "date": "2022-11-29", "start": "16:40", "end": "17:30" },
+
+        { "id": 14, "date": "2022-11-30", "start": "10:50", "end": "11:40" },
+        { "id": 15, "date": "2022-11-30", "start": "11:40", "end": "12:30" },
+        { "id": 16, "date": "2022-11-30", "start": "13:50", "end": "14:40" },
+        { "id": 17, "date": "2022-11-30", "start": "14:40", "end": "15:30" },
+        { "id": 18, "date": "2022-11-30", "start": "15:50", "end": "16:40" },
+        { "id": 19, "date": "2022-11-30", "start": "16:40", "end": "17:30" }
+    ],
+    
+    "rooms": [
+        {
+            "id": 0,
+            "description": "Auditório",
+            "available-datetimes": [6, 7, 8, 9, 14, 15, 16, 17, 18, 19]
+        },
+        {
+            "id": 1,
+            "description": "Sala 625",
+            "available-datetimes": [0, 1, 2, 3, 4, 5]
+        }
+    ],
+
+    "evaluators": [
+        {
+            "id": 0,
+            "name": "Alberto P. Lara",
+            "constraints": {
+                "unavailable-datetimes": [10, 11, 12, 13]
+            }
+        },
+        {
+            "id": 1,
+            "name": "Alisson M. da Silva",
+            "constraints": {
+                "unavailable-datetimes": [6, 7, 8, 9]
+            }
+        },
+        {
+            "id": 2,
+            "name": "André L. Maravilha",
+            "constraints": {
+                "unavailable-datetimes": []
+            }
+        },
+        {
+            "id": 3,
+            "name": "Charlene de C. Resende",
+            "constraints": {
+                "unavailable-datetimes": [2, 3, 14, 15, 18, 19]
+            }
+        },
+        {
+            "id": 4,
+            "name": "Christian G. Herrera",
+            "constraints": {
+                "unavailable-datetimes": [6, 7, 8, 9]
+            }
+        },
+        {
+            "id": 5,
+            "name": "Daniel M. dos Reis",
+            "constraints": {
+                "unavailable-datetimes": [4, 5]
+            }
+        },
+        {
+            "id": 6,
+            "name": "Eduardo H. B. Maia",
+            "constraints": {
+                "unavailable-datetimes": [6, 7, 8, 9]
+            }
+        },
+        {
+            "id": 7,
+            "name": "Marcelo C. P. Fraga",
+            "constraints": {
+                "unavailable-datetimes": [6, 7, 8, 9]
+            }
+        },
+        {
+            "id": 8,
+            "name": "Michel P. da Silva",
+            "constraints": {
+                "unavailable-datetimes": [4, 5, 6, 7, 8, 9, 10, 11, 14, 15]
+            }
+        },
+        {
+            "id": 9,
+            "name": "Raulivan R. da Silva",
+            "constraints": {
+                "unavailable-datetimes": []
+            }
+        },
+        {
+            "id": 10,
+            "name": "Thabatta M. A. de Araújo",
+            "constraints": {
+                "unavailable-datetimes": [4, 5]
+            }
+        },
+        {
+            "id": 11,
+            "name": "Thiago M. R. Dias",
+            "constraints": {
+                "unavailable-datetimes": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+            }
+        },
+        {
+            "id": 12,
+            "name": "Willyam M. Ferreira",
+            "constraints": {
+                "unavailable-datetimes": [4, 5, 6, 7, 8, 9]
+            }
+        }
+    ],
+
+    "works": [
+        {
+            "id": 0,
+            "title": "Sistema de gestão para oficinas mecânicas",
+            "authors": ["Lucas M. Nogueira", "Luisa S. Santos", "Sarah A. Pereira"],
+            "course": "Curso Técnico em Informática",
+            "advisor": 8,
+            "coadvisor": 9,
+            "constraints": {
+                "number-evaluators": 3,
+                "required-evaluators": [8, 9],
+                "forbidden-evaluators": [],
+                "unavailable-datetimes": []
+            },
+            "suggestions": {
+                "wanted-evaluators": [12],
+                "unwanted-evaluators": [1]
+            }
+        },
+        {
+            "id": 1,
+            "title": "HealLife: desenvolvimento de um aplicativo mobile de auxílio ao cuidado domiciliar",
+            "authors": ["André C. Araújo", "Túlio G. T. Viana"],
+            "course": "Curso Técnico em Informática",
+            "advisor": 12,
+            "coadvisor": 9,
+            "constraints": {
+                "number-evaluators": 3,
+                "required-evaluators": [12, 9],
+                "forbidden-evaluators": [],
+                "unavailable-datetimes": []
+            },
+            "suggestions": {
+                "wanted-evaluators": [7],
+                "unwanted-evaluators": [1]
+            }
+        },
+        {
+            "id": 2,
+            "title": "CronoLab: um gerenciador de estudantes para os estudantes",
+            "authors": ["André F. Santos", "Pedro P. Manoel", "Rafael R. S. Cardoso"],
+            "course": "Curso Técnico em Informática",
+            "advisor": 6,
+            "coadvisor": 8,
+            "constraints": {
+                "number-evaluators": 3,
+                "required-evaluators": [6, 8],
+                "forbidden-evaluators": [],
+                "unavailable-datetimes": []
+            },
+            "suggestions": {
+                "wanted-evaluators": [2],
+                "unwanted-evaluators": [1]
+            }
+        },
+        {
+            "id": 3,
+            "title": "Project Hope",
+            "authors": ["Carlos E. M. Gontijo", "Gabriel de C. R. Tolentino", "Marco T. S. e Souza"],
+            "course": "Curso Técnico em Informática",
+            "advisor": 9,
+            "coadvisor": 8,
+            "constraints": {
+                "number-evaluators": 3,
+                "required-evaluators": [9, 8],
+                "forbidden-evaluators": [],
+                "unavailable-datetimes": []
+            },
+            "suggestions": {
+                "wanted-evaluators": [6],
+                "unwanted-evaluators": [1]
+            }
+        },
+        {
+            "id": 4,
+            "title": "WalkThrough: aplicativo de gestão de horários e de controle de acesso a ambientes",
+            "authors": ["Rafael M. de Carvalho", "Guilherme A. de Azevedo", "Pedro M. M. Reis", "Thulio C. Dias"],
+            "course": "Curso Técnico em Informática",
+            "advisor": 10,
+            "coadvisor": 12,
+            "constraints": {
+                "number-evaluators": 3,
+                "required-evaluators": [10, 12],
+                "forbidden-evaluators": [],
+                "unavailable-datetimes": []
+            },
+            "suggestions": {
+                "wanted-evaluators": [9],
+                "unwanted-evaluators": [0]
+            }
+        },
+        {
+            "id": 5,
+            "title": "Revise: um sistema educacional para auxílio e gestão de revisões",
+            "authors": ["Ari G. da S. Filho", "Halana de F. Barcelos", "João E. B. Rodrigues"],
+            "course": "Curso Técnico em Informática",
+            "advisor": 8,
+            "coadvisor": 6,
+            "constraints": {
+                "number-evaluators": 3,
+                "required-evaluators": [8, 6],
+                "forbidden-evaluators": [],
+                "unavailable-datetimes": []
+            },
+            "suggestions": {
+                "wanted-evaluators": [],
+                "unwanted-evaluators": [1]
+            }
+        },
+        {
+            "id": 6,
+            "title": "Monitoramento autônomo de irrigação com Arduino",
+            "authors": ["Kilvia A. S. Ferreira", "Bernardo V. Coutinho", "Thauany S. Silva"],
+            "course": "Curso Técnico em Informática",
+            "advisor": 10,
+            "coadvisor": 8,
+            "constraints": {
+                "number-evaluators": 3,
+                "required-evaluators": [10, 8],
+                "forbidden-evaluators": [],
+                "unavailable-datetimes": []
+            },
+            "suggestions": {
+                "wanted-evaluators": [4],
+                "unwanted-evaluators": [1]
+            }
+        },
+        {
+            "id": 7,
+            "title": "Cryptids",
+            "authors": ["Lavínia R. Pereira", "Pedro H. Diniz", "Thalisson R. dos Santos"],
+            "course": "Curso Técnico em Informática",
+            "advisor": 8,
+            "coadvisor": 9,
+            "constraints": {
+                "number-evaluators": 3,
+                "required-evaluators": [8, 9],
+                "forbidden-evaluators": [],
+                "unavailable-datetimes": []
+            },
+            "suggestions": {
+                "wanted-evaluators": [],
+                "unwanted-evaluators": [0]
+            }
+        },
+        {
+            "id": 8,
+            "title": "iTonomise",
+            "authors": ["Emily B. A. Sales", "Leonardo O. S. de M. Silva"],
+            "course": "Curso Técnico em Informática",
+            "advisor": 5,
+            "coadvisor": 6,
+            "constraints": {
+                "number-evaluators": 3,
+                "required-evaluators": [5, 6],
+                "forbidden-evaluators": [],
+                "unavailable-datetimes": []
+            },
+            "suggestions": {
+                "wanted-evaluators": [],
+                "unwanted-evaluators": [1]
+            }
+        },
+        {
+            "id": 9,
+            "title": "SAS&T: sistema de agendamento de serviços e tarefas",
+            "authors": ["Ana C. A. Costa", "Maria E. R. de Paula", "Thainá C. Bernardes"],
+            "course": "Curso Técnico em Informática",
+            "advisor": 2,
+            "coadvisor": 9,
+            "constraints": {
+                "number-evaluators": 3,
+                "required-evaluators": [2, 9],
+                "forbidden-evaluators": [],
+                "unavailable-datetimes": []
+            },
+            "suggestions": {
+                "wanted-evaluators": [7],
+                "unwanted-evaluators": [1]
+            }
+        }
+    ]
+}

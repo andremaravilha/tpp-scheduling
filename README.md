@@ -1,9 +1,8 @@
 # Scheduling term paper presentations through optimization
 
 [![GitHub license](https://img.shields.io/github/license/andremaravilha/tpp-scheduling)](https://github.com/andremaravilha/tpp-scheduling/blob/main/LICENSE) 
-[![Build Status](https://travis-ci.org/andremaravilha/cxxtimer.svg?branch=master)](https://travis-ci.org/andremaravilha/cxxtimer) 
-![Lines of code](https://img.shields.io/tokei/lines/github/andremaravilha/cxxtimer) 
-![GitHub repo size](https://img.shields.io/github/repo-size/andremaravilha/cxxtimer) 
+![Lines of code](https://img.shields.io/tokei/lines/github/andremaravilha/tpp-scheduling) 
+![GitHub repo size](https://img.shields.io/github/repo-size/andremaravilha/tpp-scheduling) 
 
 > Prof. André L. Maravilha, D.Sc.  
 > *Dept. of Informatics, Management and Design - Centro Fed. de Edu. Tecnológica de Minas Gerais ([url](https://www.cefetmg.br/))*  
